@@ -69,6 +69,7 @@ void MirroredTypesException::init$($String* message, $TypeMirror* type) {
 }
 
 void MirroredTypesException::init$($List* types$renamed) {
+	$useLocalCurrentObjectStackCache();
 	$var($List, types, types$renamed);
 	$RuntimeException::init$($$str({"Attempt to access Class objects for TypeMirrors "_s, $($nc($of(($assign(types, $new($ArrayList, static_cast<$Collection*>(types))))))->toString())}));
 	$set(this, types, $Collections::unmodifiableList(types));

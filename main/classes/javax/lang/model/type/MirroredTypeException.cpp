@@ -53,6 +53,7 @@ $Object* allocate$MirroredTypeException($Class* clazz) {
 }
 
 void MirroredTypeException::init$($TypeMirror* type) {
+	$useLocalCurrentObjectStackCache();
 	$MirroredTypesException::init$($$str({"Attempt to access Class object for TypeMirror "_s, $($nc(type)->toString())}), type);
 	$set(this, type, type);
 }

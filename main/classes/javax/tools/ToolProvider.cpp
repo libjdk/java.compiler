@@ -170,6 +170,7 @@ $ClassLoader* ToolProvider::getSystemToolClassLoader() {
 
 $Object* ToolProvider::getSystemTool($Class* clazz, $String* moduleName, $String* className) {
 	$init(ToolProvider);
+	$useLocalCurrentObjectStackCache();
 	$beforeCallerSensitive();
 	try {
 		$var($ServiceLoader, sl, $ServiceLoader::load(clazz, $($ClassLoader::getSystemClassLoader())));
@@ -193,6 +194,7 @@ $Object* ToolProvider::getSystemTool($Class* clazz, $String* moduleName, $String
 
 bool ToolProvider::matches(Object$* tool, $String* moduleName) {
 	$init(ToolProvider);
+	$useLocalCurrentObjectStackCache();
 	$beforeCallerSensitive();
 	$var($PrivilegedAction, pa, static_cast<$PrivilegedAction*>($new(ToolProvider$$Lambda$lambda$matches$0, tool, moduleName)));
 	return $nc(($cast($Boolean, $($AccessController::doPrivileged(pa)))))->booleanValue();
@@ -200,6 +202,7 @@ bool ToolProvider::matches(Object$* tool, $String* moduleName) {
 
 $Boolean* ToolProvider::lambda$matches$0(Object$* tool, $String* moduleName) {
 	$init(ToolProvider);
+	$useLocalCurrentObjectStackCache();
 	$var($Module, toolModule, $nc($of(tool))->getClass()->getModule());
 	$var($String, toolModuleName, $nc(toolModule)->getName());
 	return $Boolean::valueOf($Objects::equals(toolModuleName, moduleName));

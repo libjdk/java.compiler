@@ -109,12 +109,14 @@ void AbstractProcessor::init$() {
 }
 
 $Set* AbstractProcessor::getSupportedOptions() {
+	$useLocalCurrentObjectStackCache();
 	$load($SupportedOptions);
 	$var($SupportedOptions, so, $cast($SupportedOptions, $of(this)->getClass()->getAnnotation($SupportedOptions::class$)));
 	return (so == nullptr) ? $Set::of() : arrayToSet($($nc(so)->value()), false, "option value"_s, "@SupportedOptions"_s);
 }
 
 $Set* AbstractProcessor::getSupportedAnnotationTypes() {
+	$useLocalCurrentObjectStackCache();
 	$load($SupportedAnnotationTypes);
 	$var($SupportedAnnotationTypes, sat, $cast($SupportedAnnotationTypes, $of(this)->getClass()->getAnnotation($SupportedAnnotationTypes::class$)));
 	bool initialized = isInitialized();
@@ -132,6 +134,7 @@ $Set* AbstractProcessor::getSupportedAnnotationTypes() {
 }
 
 $SourceVersion* AbstractProcessor::getSupportedSourceVersion() {
+	$useLocalCurrentObjectStackCache();
 	$load($SupportedSourceVersion);
 	$var($SupportedSourceVersion, ssv, $cast($SupportedSourceVersion, $of(this)->getClass()->getAnnotation($SupportedSourceVersion::class$)));
 	$SourceVersion* sv = nullptr;
@@ -170,6 +173,7 @@ bool AbstractProcessor::isInitialized() {
 }
 
 $Set* AbstractProcessor::arrayToSet($StringArray* array, bool stripModulePrefixes, $String* contentType, $String* annotationName) {
+	$useLocalCurrentObjectStackCache();
 	if (!AbstractProcessor::$assertionsDisabled && !(array != nullptr)) {
 		$throwNew($AssertionError);
 	}

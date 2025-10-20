@@ -58,6 +58,7 @@ $Object* allocate$RoundEnvironment($Class* clazz) {
 }
 
 $Set* RoundEnvironment::getElementsAnnotatedWithAny($TypeElementArray* annotations) {
+	$useLocalCurrentObjectStackCache();
 	$var($Set, result, $new($LinkedHashSet));
 	{
 		$var($TypeElementArray, arr$, annotations);
@@ -74,6 +75,7 @@ $Set* RoundEnvironment::getElementsAnnotatedWithAny($TypeElementArray* annotatio
 }
 
 $Set* RoundEnvironment::getElementsAnnotatedWithAny($Set* annotations) {
+	$useLocalCurrentObjectStackCache();
 	$var($Set, result, $new($LinkedHashSet));
 	{
 		$var($Iterator, i$, $nc(annotations)->iterator());

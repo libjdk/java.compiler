@@ -188,6 +188,7 @@ SourceVersion* SourceVersion::latest() {
 
 SourceVersion* SourceVersion::getLatestSupported() {
 	$init(SourceVersion);
+	$useLocalCurrentObjectStackCache();
 	int32_t intVersion = $nc($($Runtime::version()))->feature();
 	return (intVersion >= 11) ? valueOf($$str({"RELEASE_"_s, $$str($Math::min(17, intVersion))})) : SourceVersion::RELEASE_10;
 }
@@ -223,6 +224,7 @@ bool SourceVersion::isName($CharSequence* name) {
 
 bool SourceVersion::isName($CharSequence* name, SourceVersion* version) {
 	$init(SourceVersion);
+	$useLocalCurrentObjectStackCache();
 	$var($String, id, $nc(name)->toString());
 	{
 		$var($StringArray, arr$, $nc(id)->split("\\."_s, -1));
@@ -248,6 +250,7 @@ bool SourceVersion::isKeyword($CharSequence* s) {
 
 bool SourceVersion::isKeyword($CharSequence* s, SourceVersion* version) {
 	$init(SourceVersion);
+	$useLocalCurrentObjectStackCache();
 	$var($String, id, $nc(s)->toString());
 	{
 		$var($String, s13823$, id);

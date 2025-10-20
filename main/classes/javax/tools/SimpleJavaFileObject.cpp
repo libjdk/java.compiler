@@ -118,6 +118,7 @@ $OutputStream* SimpleJavaFileObject::openOutputStream() {
 }
 
 $Reader* SimpleJavaFileObject::openReader(bool ignoreEncodingErrors) {
+	$useLocalCurrentObjectStackCache();
 	$var($CharSequence, charContent, getCharContent(ignoreEncodingErrors));
 	if (charContent == nullptr) {
 		$throwNew($UnsupportedOperationException);
@@ -153,6 +154,7 @@ $JavaFileObject$Kind* SimpleJavaFileObject::getKind() {
 }
 
 bool SimpleJavaFileObject::isNameCompatible($String* simpleName, $JavaFileObject$Kind* kind) {
+	$useLocalCurrentObjectStackCache();
 	$var($String, baseName, $str({simpleName, $nc(kind)->extension}));
 	bool var$0 = kind->equals($(getKind()));
 	if (var$0) {
@@ -171,6 +173,7 @@ $Modifier* SimpleJavaFileObject::getAccessLevel() {
 }
 
 $String* SimpleJavaFileObject::toString() {
+	$useLocalCurrentObjectStackCache();
 	$var($String, var$1, $$str({$($of(this)->getClass()->getName()), "["_s}));
 	$var($String, var$0, $$concat(var$1, $(toUri())));
 	return $concat(var$0, "]");

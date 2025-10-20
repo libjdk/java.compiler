@@ -128,6 +128,7 @@ void ElementScanner6::init$(Object$* defaultValue) {
 }
 
 $Object* ElementScanner6::scan($Iterable* iterable, Object$* p) {
+	$useLocalCurrentObjectStackCache();
 	$var($Object, result, this->DEFAULT_VALUE);
 	{
 		$var($Iterator, i$, $nc(iterable)->iterator());

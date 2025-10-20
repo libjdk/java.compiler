@@ -193,6 +193,7 @@ void StandardLocation::init$($String* $enum$name, int32_t $enum$ordinal) {
 
 $JavaFileManager$Location* StandardLocation::locationFor($String* name) {
 	$init(StandardLocation);
+	$useLocalCurrentObjectStackCache();
 	if ($nc(StandardLocation::locations)->isEmpty()) {
 		{
 			$var($StandardLocationArray, arr$, values());

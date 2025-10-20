@@ -251,6 +251,7 @@ $Iterable* StandardJavaFileManager::asFiles($Iterable* paths) {
 
 $Collection* StandardJavaFileManager::asCollection($Iterable* iterable) {
 	$init(StandardJavaFileManager);
+	$useLocalCurrentObjectStackCache();
 	if ($instanceOf($Collection, iterable)) {
 		return $cast($Collection, iterable);
 	}

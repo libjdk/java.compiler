@@ -89,14 +89,17 @@ void ElementScanner14::init$(Object$* defaultValue) {
 }
 
 $Object* ElementScanner14::visitType($TypeElement* e, Object$* p) {
+	$useLocalCurrentObjectStackCache();
 	return $of(scan($(static_cast<$Iterable*>(createScanningList(e, $($nc(e)->getEnclosedElements())))), p));
 }
 
 $Object* ElementScanner14::visitExecutable($ExecutableElement* e, Object$* p) {
+	$useLocalCurrentObjectStackCache();
 	return $of(scan($(static_cast<$Iterable*>(createScanningList(e, $($nc(e)->getParameters())))), p));
 }
 
 $List* ElementScanner14::createScanningList($Parameterizable* element, $List* toBeScanned) {
+	$useLocalCurrentObjectStackCache();
 	$var($List, typeParameters, $nc(element)->getTypeParameters());
 	if ($nc(typeParameters)->isEmpty()) {
 		return toBeScanned;

@@ -245,6 +245,7 @@ $Set* ElementFilter::modulesIn($Set* elements) {
 
 $List* ElementFilter::listFilter($Iterable* elements, $Set* targetKinds, $Class* clazz) {
 	$init(ElementFilter);
+	$useLocalCurrentObjectStackCache();
 	$var($List, list, $new($ArrayList));
 	{
 		$var($Iterator, i$, $nc(elements)->iterator());
@@ -262,6 +263,7 @@ $List* ElementFilter::listFilter($Iterable* elements, $Set* targetKinds, $Class*
 
 $Set* ElementFilter::setFilter($Set* elements, $Set* targetKinds, $Class* clazz) {
 	$init(ElementFilter);
+	$useLocalCurrentObjectStackCache();
 	$var($Set, set, $new($LinkedHashSet));
 	{
 		$var($Iterator, i$, $nc(elements)->iterator());
@@ -314,6 +316,7 @@ $List* ElementFilter::usesIn($Iterable* directives) {
 
 $List* ElementFilter::listFilter($Iterable* directives, $ModuleElement$DirectiveKind* directiveKind, $Class* clazz) {
 	$init(ElementFilter);
+	$useLocalCurrentObjectStackCache();
 	$var($List, list, $new($ArrayList));
 	{
 		$var($Iterator, i$, $nc(directives)->iterator());
@@ -330,6 +333,7 @@ $List* ElementFilter::listFilter($Iterable* directives, $ModuleElement$Directive
 }
 
 void clinit$ElementFilter($Class* class$) {
+	$useLocalCurrentObjectStackCache();
 	$init($ElementKind);
 	$assignStatic(ElementFilter::CONSTRUCTOR_KIND, $Collections::unmodifiableSet($($EnumSet::of($ElementKind::CONSTRUCTOR))));
 	$assignStatic(ElementFilter::FIELD_KINDS, $Collections::unmodifiableSet($($EnumSet::of(static_cast<$Enum*>($ElementKind::FIELD), static_cast<$Enum*>($ElementKind::ENUM_CONSTANT)))));

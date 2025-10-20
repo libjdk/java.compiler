@@ -135,6 +135,7 @@ $PackageElement* Elements::getPackageElement($ModuleElement* module, $CharSequen
 }
 
 $Set* Elements::getAllPackageElements($CharSequence* name) {
+	$useLocalCurrentObjectStackCache();
 	$var($Set, modules, getAllModuleElements());
 	if ($nc(modules)->isEmpty()) {
 		$var($PackageElement, packageElt, getPackageElement(name));
@@ -162,6 +163,7 @@ $TypeElement* Elements::getTypeElement($ModuleElement* module, $CharSequence* na
 }
 
 $Set* Elements::getAllTypeElements($CharSequence* name) {
+	$useLocalCurrentObjectStackCache();
 	$var($Set, modules, getAllModuleElements());
 	if ($nc(modules)->isEmpty()) {
 		$var($TypeElement, typeElt, getTypeElement(name));
@@ -220,6 +222,7 @@ bool Elements::isAutomaticModule($ModuleElement* module) {
 }
 
 $RecordComponentElement* Elements::recordComponentFor($ExecutableElement* accessor) {
+	$useLocalCurrentObjectStackCache();
 	$init($ElementKind);
 	if ($nc($($nc(accessor)->getEnclosingElement()))->getKind() == $ElementKind::RECORD) {
 		{

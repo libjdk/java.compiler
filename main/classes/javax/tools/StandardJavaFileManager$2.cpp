@@ -93,6 +93,7 @@ bool StandardJavaFileManager$2::hasNext() {
 }
 
 $Object* StandardJavaFileManager$2::next() {
+	$useLocalCurrentObjectStackCache();
 	$var($Path, p, $cast($Path, $nc(this->iter)->next()));
 	try {
 		return $of($nc(p)->toFile());
