@@ -1,15 +1,6 @@
 #include <javax/tools/DocumentationTool$1.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/EnclosingMethodInfo.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
 #include <java/lang/NoSuchFieldError.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/tools/DocumentationTool$Location.h>
 #include <javax/tools/DocumentationTool.h>
 #include <jcpp.h>
@@ -72,8 +63,7 @@ void clinit$DocumentationTool$1($Class* class$) {
 	{
 		try {
 			$nc(DocumentationTool$1::$SwitchMap$javax$tools$DocumentationTool$Location)->set($DocumentationTool$Location::DOCUMENTATION_OUTPUT->ordinal(), 1);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 	}
 }

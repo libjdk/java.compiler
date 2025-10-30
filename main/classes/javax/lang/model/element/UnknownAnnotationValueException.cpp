@@ -1,12 +1,5 @@
 #include <javax/lang/model/element/UnknownAnnotationValueException.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/UnknownEntityException.h>
 #include <javax/lang/model/element/AnnotationValue.h>
 #include <jcpp.h>
@@ -66,16 +59,10 @@ $Object* UnknownAnnotationValueException::getArgument() {
 UnknownAnnotationValueException::UnknownAnnotationValueException() {
 }
 
-UnknownAnnotationValueException::UnknownAnnotationValueException(const UnknownAnnotationValueException& e) {
+UnknownAnnotationValueException::UnknownAnnotationValueException(const UnknownAnnotationValueException& e) : $UnknownEntityException(e) {
 }
 
-UnknownAnnotationValueException UnknownAnnotationValueException::wrapper$() {
-	$pendingException(this);
-	return *this;
-}
-
-void UnknownAnnotationValueException::throwWrapper$() {
-	$pendingException(this);
+void UnknownAnnotationValueException::throw$() {
 	throw *this;
 }
 

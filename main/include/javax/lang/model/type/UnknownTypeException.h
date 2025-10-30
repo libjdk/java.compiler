@@ -31,8 +31,10 @@ public:
 	::javax::lang::model::type::TypeMirror* type = nullptr;
 	$Object* parameter = nullptr;
 	UnknownTypeException(const UnknownTypeException& e);
-	UnknownTypeException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline UnknownTypeException* operator ->() {
+		return (UnknownTypeException*)throwing$;
+	}
 };
 
 			} // type

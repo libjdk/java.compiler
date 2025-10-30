@@ -1,19 +1,10 @@
 #include <javax/lang/model/SourceVersion.h>
 
-#include <java/lang/Array.h>
 #include <java/lang/CharSequence.h>
-#include <java/lang/Character.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
 #include <java/lang/Math.h>
-#include <java/lang/MethodInfo.h>
 #include <java/lang/Runtime$Version.h>
 #include <java/lang/Runtime.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <jcpp.h>
 
 #undef RELEASE_0
@@ -104,41 +95,23 @@ $Object* allocate$SourceVersion($Class* clazz) {
 	return $of($alloc(SourceVersion));
 }
 
-
 SourceVersion* SourceVersion::RELEASE_0 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_1 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_2 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_3 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_4 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_5 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_6 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_7 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_8 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_9 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_10 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_11 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_12 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_13 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_14 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_15 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_16 = nullptr;
-
 SourceVersion* SourceVersion::RELEASE_17 = nullptr;
 $SourceVersionArray* SourceVersion::$VALUES = nullptr;
 SourceVersion* SourceVersion::latestSupported$ = nullptr;

@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/SimpleElementVisitor8.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/SimpleElementVisitor7.h>
 #include <jcpp.h>
 
@@ -26,11 +18,11 @@ $NamedAttribute SimpleElementVisitor8_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_8"},
 	{}
 };
+
 $CompoundAttribute _SimpleElementVisitor8_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleElementVisitor8_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _SimpleElementVisitor8_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(SimpleElementVisitor8::*)()>(&SimpleElementVisitor8::init$))},

@@ -35,8 +35,10 @@ public:
 	static const int64_t serialVersionUID = 269;
 	::javax::lang::model::type::TypeMirror* type = nullptr;
 	MirroredTypeException(const MirroredTypeException& e);
-	MirroredTypeException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline MirroredTypeException* operator ->() {
+		return (MirroredTypeException*)throwing$;
+	}
 };
 
 			} // type

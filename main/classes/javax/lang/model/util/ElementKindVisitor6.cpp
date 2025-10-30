@@ -1,17 +1,6 @@
 #include <javax/lang/model/util/ElementKindVisitor6.h>
 
-#include <java/lang/Array.h>
 #include <java/lang/AssertionError.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/element/Element.h>
 #include <javax/lang/model/element/ElementKind.h>
 #include <javax/lang/model/element/ExecutableElement.h>
@@ -59,6 +48,7 @@ $NamedAttribute ElementKindVisitor6_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_6"},
 	{}
 };
+
 $CompoundAttribute _ElementKindVisitor6_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", ElementKindVisitor6_Attribute_var$0},
 	{}
@@ -83,7 +73,6 @@ $CompoundAttribute _ElementKindVisitor6_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", ElementKindVisitor6_Attribute_var$2},
 	{}
 };
-
 
 $FieldInfo _ElementKindVisitor6_FieldInfo_[] = {
 	{"$assertionsDisabled", "Z", nullptr, $STATIC | $FINAL | $SYNTHETIC, $staticField(ElementKindVisitor6, $assertionsDisabled)},

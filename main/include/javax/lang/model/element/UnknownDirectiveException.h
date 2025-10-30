@@ -31,8 +31,10 @@ public:
 	::javax::lang::model::element::ModuleElement$Directive* directive = nullptr;
 	$Object* parameter = nullptr;
 	UnknownDirectiveException(const UnknownDirectiveException& e);
-	UnknownDirectiveException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline UnknownDirectiveException* operator ->() {
+		return (UnknownDirectiveException*)throwing$;
+	}
 };
 
 			} // element

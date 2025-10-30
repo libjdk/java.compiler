@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/SimpleTypeVisitor8.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/type/IntersectionType.h>
 #include <javax/lang/model/type/TypeMirror.h>
 #include <javax/lang/model/util/SimpleTypeVisitor6.h>
@@ -32,11 +24,11 @@ $NamedAttribute SimpleTypeVisitor8_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_8"},
 	{}
 };
+
 $CompoundAttribute _SimpleTypeVisitor8_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleTypeVisitor8_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _SimpleTypeVisitor8_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(SimpleTypeVisitor8::*)()>(&SimpleTypeVisitor8::init$))},

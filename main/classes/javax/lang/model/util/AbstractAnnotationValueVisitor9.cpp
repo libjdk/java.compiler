@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/AbstractAnnotationValueVisitor9.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/AbstractAnnotationValueVisitor8.h>
 #include <jcpp.h>
 
@@ -26,11 +18,11 @@ $NamedAttribute AbstractAnnotationValueVisitor9_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_14"},
 	{}
 };
+
 $CompoundAttribute _AbstractAnnotationValueVisitor9_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", AbstractAnnotationValueVisitor9_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _AbstractAnnotationValueVisitor9_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(AbstractAnnotationValueVisitor9::*)()>(&AbstractAnnotationValueVisitor9::init$))},

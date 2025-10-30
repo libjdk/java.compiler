@@ -1,12 +1,5 @@
 #include <javax/lang/model/element/UnknownDirectiveException.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/UnknownEntityException.h>
 #include <javax/lang/model/element/ModuleElement$Directive.h>
 #include <jcpp.h>
@@ -66,16 +59,10 @@ $Object* UnknownDirectiveException::getArgument() {
 UnknownDirectiveException::UnknownDirectiveException() {
 }
 
-UnknownDirectiveException::UnknownDirectiveException(const UnknownDirectiveException& e) {
+UnknownDirectiveException::UnknownDirectiveException(const UnknownDirectiveException& e) : $UnknownEntityException(e) {
 }
 
-UnknownDirectiveException UnknownDirectiveException::wrapper$() {
-	$pendingException(this);
-	return *this;
-}
-
-void UnknownDirectiveException::throwWrapper$() {
-	$pendingException(this);
+void UnknownDirectiveException::throw$() {
 	throw *this;
 }
 

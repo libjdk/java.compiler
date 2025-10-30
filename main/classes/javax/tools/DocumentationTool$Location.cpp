@@ -1,15 +1,6 @@
 #include <javax/tools/DocumentationTool$Location.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/tools/DocumentationTool$1.h>
 #include <javax/tools/DocumentationTool.h>
 #include <jcpp.h>
@@ -100,11 +91,8 @@ void DocumentationTool$Location::finalize() {
 	this->$Enum::finalize();
 }
 
-
 DocumentationTool$Location* DocumentationTool$Location::DOCUMENTATION_OUTPUT = nullptr;
-
 DocumentationTool$Location* DocumentationTool$Location::DOCLET_PATH = nullptr;
-
 DocumentationTool$Location* DocumentationTool$Location::TAGLET_PATH = nullptr;
 $DocumentationTool$LocationArray* DocumentationTool$Location::$VALUES = nullptr;
 

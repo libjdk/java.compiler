@@ -1,15 +1,6 @@
 #include <javax/lang/model/util/Elements$Origin.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/Elements.h>
 #include <jcpp.h>
 
@@ -72,11 +63,8 @@ $Object* allocate$Elements$Origin($Class* clazz) {
 	return $of($alloc(Elements$Origin));
 }
 
-
 Elements$Origin* Elements$Origin::EXPLICIT = nullptr;
-
 Elements$Origin* Elements$Origin::MANDATED = nullptr;
-
 Elements$Origin* Elements$Origin::SYNTHETIC = nullptr;
 $Elements$OriginArray* Elements$Origin::$VALUES = nullptr;
 

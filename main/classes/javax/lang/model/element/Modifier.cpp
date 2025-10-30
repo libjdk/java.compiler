@@ -1,15 +1,6 @@
 #include <javax/lang/model/element/Modifier.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/util/Locale.h>
 #include <javax/lang/model/element/Modifier$1.h>
 #include <jcpp.h>
@@ -96,33 +87,19 @@ $Object* allocate$Modifier($Class* clazz) {
 	return $of($alloc(Modifier));
 }
 
-
 Modifier* Modifier::PUBLIC = nullptr;
-
 Modifier* Modifier::PROTECTED = nullptr;
-
 Modifier* Modifier::PRIVATE = nullptr;
-
 Modifier* Modifier::ABSTRACT = nullptr;
-
 Modifier* Modifier::DEFAULT = nullptr;
-
 Modifier* Modifier::STATIC = nullptr;
-
 Modifier* Modifier::SEALED = nullptr;
-
 Modifier* Modifier::NON_SEALED = nullptr;
-
 Modifier* Modifier::FINAL = nullptr;
-
 Modifier* Modifier::TRANSIENT = nullptr;
-
 Modifier* Modifier::VOLATILE = nullptr;
-
 Modifier* Modifier::SYNCHRONIZED = nullptr;
-
 Modifier* Modifier::NATIVE = nullptr;
-
 Modifier* Modifier::STRICTFP = nullptr;
 $ModifierArray* Modifier::$VALUES = nullptr;
 

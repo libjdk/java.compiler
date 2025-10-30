@@ -1,15 +1,6 @@
 #include <javax/tools/StandardLocation.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/util/concurrent/ConcurrentHashMap.h>
 #include <java/util/concurrent/ConcurrentMap.h>
 #include <javax/tools/JavaFileManager$Location.h>
@@ -129,31 +120,18 @@ void StandardLocation::finalize() {
 	this->$Enum::finalize();
 }
 
-
 StandardLocation* StandardLocation::CLASS_OUTPUT = nullptr;
-
 StandardLocation* StandardLocation::SOURCE_OUTPUT = nullptr;
-
 StandardLocation* StandardLocation::CLASS_PATH = nullptr;
-
 StandardLocation* StandardLocation::SOURCE_PATH = nullptr;
-
 StandardLocation* StandardLocation::ANNOTATION_PROCESSOR_PATH = nullptr;
-
 StandardLocation* StandardLocation::ANNOTATION_PROCESSOR_MODULE_PATH = nullptr;
-
 StandardLocation* StandardLocation::PLATFORM_CLASS_PATH = nullptr;
-
 StandardLocation* StandardLocation::NATIVE_HEADER_OUTPUT = nullptr;
-
 StandardLocation* StandardLocation::MODULE_SOURCE_PATH = nullptr;
-
 StandardLocation* StandardLocation::UPGRADE_MODULE_PATH = nullptr;
-
 StandardLocation* StandardLocation::SYSTEM_MODULES = nullptr;
-
 StandardLocation* StandardLocation::MODULE_PATH = nullptr;
-
 StandardLocation* StandardLocation::PATCH_MODULE_PATH = nullptr;
 $StandardLocationArray* StandardLocation::$VALUES = nullptr;
 $ConcurrentMap* StandardLocation::locations = nullptr;

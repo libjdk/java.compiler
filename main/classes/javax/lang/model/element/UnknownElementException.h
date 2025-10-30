@@ -31,8 +31,10 @@ public:
 	::javax::lang::model::element::Element* element = nullptr;
 	$Object* parameter = nullptr;
 	UnknownElementException(const UnknownElementException& e);
-	UnknownElementException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline UnknownElementException* operator ->() {
+		return (UnknownElementException*)throwing$;
+	}
 };
 
 			} // element

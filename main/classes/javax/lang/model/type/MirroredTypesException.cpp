@@ -1,14 +1,6 @@
 #include <javax/lang/model/type/MirroredTypesException.h>
 
 #include <java/io/ObjectInputStream.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/RuntimeException.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/util/AbstractList.h>
 #include <java/util/ArrayList.h>
 #include <java/util/Collection.h>
@@ -87,16 +79,10 @@ void MirroredTypesException::readObject($ObjectInputStream* s) {
 MirroredTypesException::MirroredTypesException() {
 }
 
-MirroredTypesException::MirroredTypesException(const MirroredTypesException& e) {
+MirroredTypesException::MirroredTypesException(const MirroredTypesException& e) : $RuntimeException(e) {
 }
 
-MirroredTypesException MirroredTypesException::wrapper$() {
-	$pendingException(this);
-	return *this;
-}
-
-void MirroredTypesException::throwWrapper$() {
-	$pendingException(this);
+void MirroredTypesException::throw$() {
 	throw *this;
 }
 

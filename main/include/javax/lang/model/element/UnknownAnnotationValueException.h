@@ -31,8 +31,10 @@ public:
 	::javax::lang::model::element::AnnotationValue* av = nullptr;
 	$Object* parameter = nullptr;
 	UnknownAnnotationValueException(const UnknownAnnotationValueException& e);
-	UnknownAnnotationValueException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline UnknownAnnotationValueException* operator ->() {
+		return (UnknownAnnotationValueException*)throwing$;
+	}
 };
 
 			} // element

@@ -1,21 +1,8 @@
 #include <javax/tools/StandardJavaFileManager$2.h>
 
 #include <java/io/File.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/EnclosingMethodInfo.h>
-#include <java/lang/Exception.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/IllegalArgumentException.h>
-#include <java/lang/InnerClassInfo.h>
 #include <java/lang/Iterable.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/RuntimeException.h>
-#include <java/lang/String.h>
-#include <java/lang/Throwable.h>
 #include <java/lang/UnsupportedOperationException.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/nio/file/Path.h>
 #include <java/util/Iterator.h>
 #include <javax/tools/StandardJavaFileManager.h>
@@ -97,8 +84,7 @@ $Object* StandardJavaFileManager$2::next() {
 	$var($Path, p, $cast($Path, $nc(this->iter)->next()));
 	try {
 		return $of($nc(p)->toFile());
-	} catch ($UnsupportedOperationException&) {
-		$var($UnsupportedOperationException, e, $catch());
+	} catch ($UnsupportedOperationException& e) {
 		$throwNew($IllegalArgumentException, $($nc(p)->toString()), e);
 	}
 	$shouldNotReachHere();

@@ -1,14 +1,6 @@
 #include <javax/lang/model/util/ElementScanner7.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
 #include <java/lang/Iterable.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/util/Collection.h>
 #include <java/util/List.h>
 #include <javax/lang/model/element/VariableElement.h>
@@ -35,6 +27,7 @@ $NamedAttribute ElementScanner7_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_7"},
 	{}
 };
+
 $CompoundAttribute _ElementScanner7_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", ElementScanner7_Attribute_var$0},
 	{}
@@ -59,7 +52,6 @@ $CompoundAttribute _ElementScanner7_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", ElementScanner7_Attribute_var$2},
 	{}
 };
-
 
 $MethodInfo _ElementScanner7_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED | $DEPRECATED, $method(static_cast<void(ElementScanner7::*)()>(&ElementScanner7::init$)), nullptr, nullptr, _ElementScanner7_MethodAnnotations_init$0},

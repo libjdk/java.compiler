@@ -16,8 +16,10 @@ public:
 	void init$($String* message);
 	static const int64_t serialVersionUID = (int64_t)269;
 	UnknownEntityException(const UnknownEntityException& e);
-	UnknownEntityException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline UnknownEntityException* operator ->() {
+		return (UnknownEntityException*)throwing$;
+	}
 };
 
 		} // model

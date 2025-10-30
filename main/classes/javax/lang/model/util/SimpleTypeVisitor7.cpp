@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/SimpleTypeVisitor7.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/type/TypeMirror.h>
 #include <javax/lang/model/type/UnionType.h>
 #include <javax/lang/model/util/SimpleTypeVisitor6.h>
@@ -30,6 +22,7 @@ $NamedAttribute SimpleTypeVisitor7_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_7"},
 	{}
 };
+
 $CompoundAttribute _SimpleTypeVisitor7_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleTypeVisitor7_Attribute_var$0},
 	{}
@@ -54,7 +47,6 @@ $CompoundAttribute _SimpleTypeVisitor7_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", SimpleTypeVisitor7_Attribute_var$2},
 	{}
 };
-
 
 $MethodInfo _SimpleTypeVisitor7_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED | $DEPRECATED, $method(static_cast<void(SimpleTypeVisitor7::*)()>(&SimpleTypeVisitor7::init$)), nullptr, nullptr, _SimpleTypeVisitor7_MethodAnnotations_init$0},

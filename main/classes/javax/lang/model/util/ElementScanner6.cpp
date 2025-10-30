@@ -1,15 +1,6 @@
 #include <javax/lang/model/util/ElementScanner6.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/FieldInfo.h>
 #include <java/lang/Iterable.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/util/Collection.h>
 #include <java/util/Iterator.h>
 #include <java/util/List.h>
@@ -55,6 +46,7 @@ $NamedAttribute ElementScanner6_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_6"},
 	{}
 };
+
 $CompoundAttribute _ElementScanner6_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", ElementScanner6_Attribute_var$0},
 	{}
@@ -79,7 +71,6 @@ $CompoundAttribute _ElementScanner6_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", ElementScanner6_Attribute_var$2},
 	{}
 };
-
 
 $FieldInfo _ElementScanner6_FieldInfo_[] = {
 	{"DEFAULT_VALUE", "Ljava/lang/Object;", "TR;", $PROTECTED | $FINAL, $field(ElementScanner6, DEFAULT_VALUE)},

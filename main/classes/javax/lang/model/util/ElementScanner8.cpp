@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/ElementScanner8.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/ElementScanner7.h>
 #include <jcpp.h>
 
@@ -26,11 +18,11 @@ $NamedAttribute ElementScanner8_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_8"},
 	{}
 };
+
 $CompoundAttribute _ElementScanner8_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", ElementScanner8_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _ElementScanner8_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(ElementScanner8::*)()>(&ElementScanner8::init$))},

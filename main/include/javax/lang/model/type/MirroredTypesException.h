@@ -41,8 +41,10 @@ public:
 	static const int64_t serialVersionUID = 269;
 	::java::util::List* types = nullptr;
 	MirroredTypesException(const MirroredTypesException& e);
-	MirroredTypesException wrapper$();
-	virtual void throwWrapper$() override;
+	virtual void throw$() override;
+	inline MirroredTypesException* operator ->() {
+		return (MirroredTypesException*)throwing$;
+	}
 };
 
 			} // type

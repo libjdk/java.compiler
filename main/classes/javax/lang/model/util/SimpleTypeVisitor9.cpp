@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/SimpleTypeVisitor9.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/SimpleTypeVisitor8.h>
 #include <jcpp.h>
 
@@ -26,11 +18,11 @@ $NamedAttribute SimpleTypeVisitor9_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_14"},
 	{}
 };
+
 $CompoundAttribute _SimpleTypeVisitor9_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleTypeVisitor9_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _SimpleTypeVisitor9_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(SimpleTypeVisitor9::*)()>(&SimpleTypeVisitor9::init$))},

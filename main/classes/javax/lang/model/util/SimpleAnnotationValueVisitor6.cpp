@@ -1,22 +1,5 @@
 #include <javax/lang/model/util/SimpleAnnotationValueVisitor6.h>
 
-#include <java/lang/Boolean.h>
-#include <java/lang/Byte.h>
-#include <java/lang/Character.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/Double.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/Float.h>
-#include <java/lang/Integer.h>
-#include <java/lang/Long.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/Short.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <java/util/List.h>
 #include <javax/lang/model/element/AnnotationMirror.h>
 #include <javax/lang/model/element/VariableElement.h>
@@ -54,6 +37,7 @@ $NamedAttribute SimpleAnnotationValueVisitor6_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_6"},
 	{}
 };
+
 $CompoundAttribute _SimpleAnnotationValueVisitor6_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleAnnotationValueVisitor6_Attribute_var$0},
 	{}
@@ -78,7 +62,6 @@ $CompoundAttribute _SimpleAnnotationValueVisitor6_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", SimpleAnnotationValueVisitor6_Attribute_var$2},
 	{}
 };
-
 
 $FieldInfo _SimpleAnnotationValueVisitor6_FieldInfo_[] = {
 	{"DEFAULT_VALUE", "Ljava/lang/Object;", "TR;", $PROTECTED | $FINAL, $field(SimpleAnnotationValueVisitor6, DEFAULT_VALUE)},

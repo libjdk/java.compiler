@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/AbstractTypeVisitor14.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/AbstractTypeVisitor9.h>
 #include <jcpp.h>
 
@@ -26,11 +18,11 @@ $NamedAttribute AbstractTypeVisitor14_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_17"},
 	{}
 };
+
 $CompoundAttribute _AbstractTypeVisitor14_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", AbstractTypeVisitor14_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _AbstractTypeVisitor14_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(AbstractTypeVisitor14::*)()>(&AbstractTypeVisitor14::init$))},

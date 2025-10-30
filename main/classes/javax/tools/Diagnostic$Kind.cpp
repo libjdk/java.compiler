@@ -1,15 +1,6 @@
 #include <javax/tools/Diagnostic$Kind.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/tools/Diagnostic.h>
 #include <jcpp.h>
 
@@ -73,15 +64,10 @@ $Object* allocate$Diagnostic$Kind($Class* clazz) {
 	return $of($alloc(Diagnostic$Kind));
 }
 
-
 Diagnostic$Kind* Diagnostic$Kind::ERROR = nullptr;
-
 Diagnostic$Kind* Diagnostic$Kind::WARNING = nullptr;
-
 Diagnostic$Kind* Diagnostic$Kind::MANDATORY_WARNING = nullptr;
-
 Diagnostic$Kind* Diagnostic$Kind::NOTE = nullptr;
-
 Diagnostic$Kind* Diagnostic$Kind::OTHER = nullptr;
 $Diagnostic$KindArray* Diagnostic$Kind::$VALUES = nullptr;
 

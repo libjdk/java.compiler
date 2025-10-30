@@ -1,15 +1,6 @@
 #include <javax/lang/model/type/TypeKind.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/type/TypeKind$1.h>
 #include <jcpp.h>
 
@@ -109,49 +100,27 @@ $Object* allocate$TypeKind($Class* clazz) {
 	return $of($alloc(TypeKind));
 }
 
-
 TypeKind* TypeKind::BOOLEAN = nullptr;
-
 TypeKind* TypeKind::BYTE = nullptr;
-
 TypeKind* TypeKind::SHORT = nullptr;
-
 TypeKind* TypeKind::INT = nullptr;
-
 TypeKind* TypeKind::LONG = nullptr;
-
 TypeKind* TypeKind::CHAR = nullptr;
-
 TypeKind* TypeKind::FLOAT = nullptr;
-
 TypeKind* TypeKind::DOUBLE = nullptr;
-
 TypeKind* TypeKind::VOID = nullptr;
-
 TypeKind* TypeKind::NONE = nullptr;
-
 TypeKind* TypeKind::NULL = nullptr;
-
 TypeKind* TypeKind::ARRAY = nullptr;
-
 TypeKind* TypeKind::DECLARED = nullptr;
-
 TypeKind* TypeKind::ERROR = nullptr;
-
 TypeKind* TypeKind::TYPEVAR = nullptr;
-
 TypeKind* TypeKind::WILDCARD = nullptr;
-
 TypeKind* TypeKind::PACKAGE = nullptr;
-
 TypeKind* TypeKind::EXECUTABLE = nullptr;
-
 TypeKind* TypeKind::OTHER = nullptr;
-
 TypeKind* TypeKind::UNION = nullptr;
-
 TypeKind* TypeKind::INTERSECTION = nullptr;
-
 TypeKind* TypeKind::MODULE = nullptr;
 $TypeKindArray* TypeKind::$VALUES = nullptr;
 

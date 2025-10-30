@@ -1,14 +1,5 @@
 #include <javax/annotation/processing/Generated.h>
 
-#include <java/lang/Attribute.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <jcpp.h>
 
 using $Attribute = ::java::lang::Attribute;
@@ -42,17 +33,21 @@ $NamedAttribute Generated_Attribute_var$1[] = {
 	{"value", '[', Generated_Attribute_var$2},
 	{}
 };
+
 $CompoundAttribute _Generated_Annotations_[] = {
 	{"Ljava/lang/annotation/Documented;", nullptr},
 	{"Ljava/lang/annotation/Retention;", Generated_Attribute_var$0},
 	{"Ljava/lang/annotation/Target;", Generated_Attribute_var$1},
 	{}
 };
-$Attribute _Generated_DefaultValue_comments0 = {
-'s', ""};
-$Attribute _Generated_DefaultValue_date1 = {
-'s', ""};
 
+$Attribute _Generated_DefaultValue_comments0 = {
+	's', ""
+};
+
+$Attribute _Generated_DefaultValue_date1 = {
+	's', ""
+};
 
 $MethodInfo _Generated_MethodInfo_[] = {
 	{"comments", "()Ljava/lang/String;", nullptr, $PUBLIC | $ABSTRACT, nullptr, nullptr, &_Generated_DefaultValue_comments0},

@@ -1,14 +1,5 @@
 #include <javax/lang/model/util/SimpleElementVisitor6.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/element/Element.h>
 #include <javax/lang/model/element/ElementKind.h>
 #include <javax/lang/model/element/ExecutableElement.h>
@@ -49,6 +40,7 @@ $NamedAttribute SimpleElementVisitor6_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_6"},
 	{}
 };
+
 $CompoundAttribute _SimpleElementVisitor6_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleElementVisitor6_Attribute_var$0},
 	{}
@@ -73,7 +65,6 @@ $CompoundAttribute _SimpleElementVisitor6_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", SimpleElementVisitor6_Attribute_var$2},
 	{}
 };
-
 
 $FieldInfo _SimpleElementVisitor6_FieldInfo_[] = {
 	{"DEFAULT_VALUE", "Ljava/lang/Object;", "TR;", $PROTECTED | $FINAL, $field(SimpleElementVisitor6, DEFAULT_VALUE)},

@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/SimpleElementVisitor14.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/element/Element.h>
 #include <javax/lang/model/element/RecordComponentElement.h>
 #include <javax/lang/model/util/SimpleElementVisitor6.h>
@@ -32,11 +24,11 @@ $NamedAttribute SimpleElementVisitor14_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_17"},
 	{}
 };
+
 $CompoundAttribute _SimpleElementVisitor14_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleElementVisitor14_Attribute_var$0},
 	{}
 };
-
 
 $MethodInfo _SimpleElementVisitor14_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED, $method(static_cast<void(SimpleElementVisitor14::*)()>(&SimpleElementVisitor14::init$))},

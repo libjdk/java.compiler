@@ -1,14 +1,6 @@
 #include <javax/lang/model/element/ElementKind.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
 #include <java/lang/Enum.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <jcpp.h>
 
 #undef ANNOTATION_TYPE
@@ -95,47 +87,26 @@ $Object* allocate$ElementKind($Class* clazz) {
 	return $of($alloc(ElementKind));
 }
 
-
 ElementKind* ElementKind::PACKAGE = nullptr;
-
 ElementKind* ElementKind::ENUM = nullptr;
-
 ElementKind* ElementKind::CLASS = nullptr;
-
 ElementKind* ElementKind::ANNOTATION_TYPE = nullptr;
-
 ElementKind* ElementKind::INTERFACE = nullptr;
-
 ElementKind* ElementKind::ENUM_CONSTANT = nullptr;
-
 ElementKind* ElementKind::FIELD = nullptr;
-
 ElementKind* ElementKind::PARAMETER = nullptr;
-
 ElementKind* ElementKind::LOCAL_VARIABLE = nullptr;
-
 ElementKind* ElementKind::EXCEPTION_PARAMETER = nullptr;
-
 ElementKind* ElementKind::METHOD = nullptr;
-
 ElementKind* ElementKind::CONSTRUCTOR = nullptr;
-
 ElementKind* ElementKind::STATIC_INIT = nullptr;
-
 ElementKind* ElementKind::INSTANCE_INIT = nullptr;
-
 ElementKind* ElementKind::TYPE_PARAMETER = nullptr;
-
 ElementKind* ElementKind::OTHER = nullptr;
-
 ElementKind* ElementKind::RESOURCE_VARIABLE = nullptr;
-
 ElementKind* ElementKind::MODULE = nullptr;
-
 ElementKind* ElementKind::RECORD = nullptr;
-
 ElementKind* ElementKind::RECORD_COMPONENT = nullptr;
-
 ElementKind* ElementKind::BINDING_VARIABLE = nullptr;
 $ElementKindArray* ElementKind::$VALUES = nullptr;
 

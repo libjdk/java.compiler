@@ -1,15 +1,6 @@
 #include <javax/tools/StandardLocation$2.h>
 
-#include <java/lang/Array.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/EnclosingMethodInfo.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/InnerClassInfo.h>
 #include <java/lang/NoSuchFieldError.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/tools/StandardLocation.h>
 #include <jcpp.h>
 
@@ -78,48 +69,39 @@ void clinit$StandardLocation$2($Class* class$) {
 	{
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::CLASS_OUTPUT->ordinal(), 1);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::SOURCE_OUTPUT->ordinal(), 2);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::NATIVE_HEADER_OUTPUT->ordinal(), 3);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::MODULE_SOURCE_PATH->ordinal(), 4);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::ANNOTATION_PROCESSOR_MODULE_PATH->ordinal(), 5);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::UPGRADE_MODULE_PATH->ordinal(), 6);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::SYSTEM_MODULES->ordinal(), 7);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::MODULE_PATH->ordinal(), 8);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 		try {
 			$nc(StandardLocation$2::$SwitchMap$javax$tools$StandardLocation)->set($StandardLocation::PATCH_MODULE_PATH->ordinal(), 9);
-		} catch ($NoSuchFieldError&) {
-			$catch();
+		} catch ($NoSuchFieldError& ex) {
 		}
 	}
 }

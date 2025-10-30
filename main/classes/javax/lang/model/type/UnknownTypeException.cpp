@@ -1,12 +1,5 @@
 #include <javax/lang/model/type/UnknownTypeException.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/FieldInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/UnknownEntityException.h>
 #include <javax/lang/model/type/TypeMirror.h>
 #include <jcpp.h>
@@ -66,16 +59,10 @@ $Object* UnknownTypeException::getArgument() {
 UnknownTypeException::UnknownTypeException() {
 }
 
-UnknownTypeException::UnknownTypeException(const UnknownTypeException& e) {
+UnknownTypeException::UnknownTypeException(const UnknownTypeException& e) : $UnknownEntityException(e) {
 }
 
-UnknownTypeException UnknownTypeException::wrapper$() {
-	$pendingException(this);
-	return *this;
-}
-
-void UnknownTypeException::throwWrapper$() {
-	$pendingException(this);
+void UnknownTypeException::throw$() {
 	throw *this;
 }
 

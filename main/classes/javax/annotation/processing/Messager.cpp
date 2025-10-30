@@ -1,12 +1,6 @@
 #include <javax/annotation/processing/Messager.h>
 
 #include <java/lang/CharSequence.h>
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/element/AnnotationMirror.h>
 #include <javax/lang/model/element/AnnotationValue.h>
 #include <javax/lang/model/element/Element.h>

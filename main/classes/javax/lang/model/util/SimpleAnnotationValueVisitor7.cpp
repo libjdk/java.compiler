@@ -1,13 +1,5 @@
 #include <javax/lang/model/util/SimpleAnnotationValueVisitor7.h>
 
-#include <java/lang/Class.h>
-#include <java/lang/ClassInfo.h>
-#include <java/lang/CompoundAttribute.h>
-#include <java/lang/MethodInfo.h>
-#include <java/lang/NamedAttribute.h>
-#include <java/lang/String.h>
-#include <java/lang/reflect/Constructor.h>
-#include <java/lang/reflect/Method.h>
 #include <javax/lang/model/util/SimpleAnnotationValueVisitor6.h>
 #include <jcpp.h>
 
@@ -26,6 +18,7 @@ $NamedAttribute SimpleAnnotationValueVisitor7_Attribute_var$0[] = {
 	{"value", 'e', "Ljavax/lang/model/SourceVersion; RELEASE_7"},
 	{}
 };
+
 $CompoundAttribute _SimpleAnnotationValueVisitor7_Annotations_[] = {
 	{"Ljavax/annotation/processing/SupportedSourceVersion;", SimpleAnnotationValueVisitor7_Attribute_var$0},
 	{}
@@ -50,7 +43,6 @@ $CompoundAttribute _SimpleAnnotationValueVisitor7_MethodAnnotations_init$1[] = {
 	{"Ljava/lang/Deprecated;", SimpleAnnotationValueVisitor7_Attribute_var$2},
 	{}
 };
-
 
 $MethodInfo _SimpleAnnotationValueVisitor7_MethodInfo_[] = {
 	{"<init>", "()V", nullptr, $PROTECTED | $DEPRECATED, $method(static_cast<void(SimpleAnnotationValueVisitor7::*)()>(&SimpleAnnotationValueVisitor7::init$)), nullptr, nullptr, _SimpleAnnotationValueVisitor7_MethodAnnotations_init$0},
