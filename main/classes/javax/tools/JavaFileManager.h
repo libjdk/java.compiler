@@ -35,7 +35,6 @@ namespace javax {
 class $export JavaFileManager : public ::java::io::Closeable, public ::java::io::Flushable, public ::javax::tools::OptionChecker {
 	$interface(JavaFileManager, $NO_CLASS_INIT, ::java::io::Closeable, ::java::io::Flushable, ::javax::tools::OptionChecker)
 public:
-	virtual ::java::lang::Object0* toObject0$() const override {return (::java::lang::Object0*)(void*)this;}
 	virtual $Object* clone() override;
 	virtual void close() override {}
 	virtual bool contains(::javax::tools::JavaFileManager$Location* location, ::javax::tools::FileObject* fo);

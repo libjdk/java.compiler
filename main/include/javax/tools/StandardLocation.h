@@ -50,7 +50,6 @@ class $import StandardLocation : public ::java::lang::Enum, public ::javax::tool
 	$class(StandardLocation, 0, ::java::lang::Enum, ::javax::tools::JavaFileManager$Location)
 public:
 	StandardLocation();
-	virtual ::java::lang::Object0* toObject0$() const override {return (::java::lang::Object0*)(void*)this;}
 	static $Array<::javax::tools::StandardLocation>* $values();
 	virtual $Object* clone() override;
 	virtual bool equals(Object$* arg0) override;

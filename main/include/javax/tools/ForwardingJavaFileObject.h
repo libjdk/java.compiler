@@ -30,7 +30,6 @@ class $import ForwardingJavaFileObject : public ::javax::tools::ForwardingFileOb
 	$class(ForwardingJavaFileObject, $NO_CLASS_INIT, ::javax::tools::ForwardingFileObject, ::javax::tools::JavaFileObject)
 public:
 	ForwardingJavaFileObject();
-	virtual ::java::lang::Object0* toObject0$() const override {return (::java::lang::Object0*)(void*)this;}
 	virtual $Object* clone() override;
 	virtual bool delete$() override;
 	virtual bool equals(Object$* arg0) override;

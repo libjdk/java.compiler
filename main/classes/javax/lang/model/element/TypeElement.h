@@ -38,7 +38,6 @@ namespace javax {
 class $export TypeElement : public ::javax::lang::model::element::Parameterizable, public ::javax::lang::model::element::QualifiedNameable {
 	$interface(TypeElement, $NO_CLASS_INIT, ::javax::lang::model::element::Parameterizable, ::javax::lang::model::element::QualifiedNameable)
 public:
-	virtual ::java::lang::Object0* toObject0$() const override {return (::java::lang::Object0*)(void*)this;}
 	virtual $Object* accept(::javax::lang::model::element::ElementVisitor* v, Object$* p) override {return nullptr;}
 	virtual ::javax::lang::model::type::TypeMirror* asType() override {return nullptr;}
 	virtual $Object* clone() override;

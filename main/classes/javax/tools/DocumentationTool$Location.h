@@ -22,7 +22,6 @@ class $export DocumentationTool$Location : public ::java::lang::Enum, public ::j
 	$class(DocumentationTool$Location, 0, ::java::lang::Enum, ::javax::tools::JavaFileManager$Location)
 public:
 	DocumentationTool$Location();
-	virtual ::java::lang::Object0* toObject0$() const override {return (::java::lang::Object0*)(void*)this;}
 	static $Array<::javax::tools::DocumentationTool$Location>* $values();
 	virtual $Object* clone() override;
 	virtual bool equals(Object$* arg0) override;
